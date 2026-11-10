@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto del sitio WebImpacto para consultas, sugerencias y propuestas sobre las tecnologías web.">
+    <meta name="author" content="[Nombre del estudiante]">
+    <title>Contacto | WebImpacto</title>
+    <link rel="stylesheet" 
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="contenedor barra">
+            <p class="logo">Web<span>Impacto</span>
+                <small>Tecnologías web y sociedad</small>
+            </p>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sociedad.html">Sociedad</a></li>
+                    <li><a href="negocios.html">Negocios</a></li>
+                    <li><a href="tendencias.html">Tendencias</a></li>
+                    <li><a href="contacto.html" class="activo">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bloque">
+            <div class="contenedor">
+                <h1 class="titulo-seccion">Contáctanos</h1>
+                <p class="texto-lead">
+                    ¿Tienes dudas, sugerencias o deseas compartir tu propia experiencia sobre el impacto de la
+                    web en tu comunidad o negocio? Completa el siguiente formulario y con gusto te responderemos.
+                </p>
+
+                <div class="rejilla-contacto">
+                   
+                    <form class="formulario" action="#" method="post">
+                        <div class="campo">
+                            <label for="nombre">Nombre completo <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej.: María Pérez" autocomplete="name" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo">Correo electrónico <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <input type="email" id="correo" name="correo" placeholder="nombre@dominio.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="asunto">Asunto <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" maxlength="80" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensaje">Mensaje <span class="obligatorio" aria-hidden="true">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu comentario, consulta o propuesta" required></textarea>
+                        </div>
+
+                        <div class="campo-checkbox">
+                            <input type="checkbox" id="boletin" name="boletin">
+                            <label for="boletin">Deseo recibir novedades sobre tecnologías web.</label>
+                        </div>
+
+                        <button type="submit" class="boton">Enviar mensaje</button>
+                    </form>
+
+                 
+                    <aside class="destacado">
+                        <h2>Otros canales de atención</h2>
+                        <p>
+                            Si prefieres un medio directo, también puedes escribirnos al correo institucional
+                            del proyecto: <a href="ontacto@webimpacto.edu.ec">fdchoez@utpl.edu.ec</a>.
+                        </p>
+                        <h3>Horario de atención</h3>
+                        <ul>
+                            <li>Lunes a viernes: 08:00 &ndash; 17:00</li>
+                            <li>Sábados: 09:00 &ndash; 12:00</li>
+                        </ul>
+                        <h3>Tiempo de respuesta</h3>
+                        <p>
+                            Las consultas se responden en un plazo máximo de dos días laborables. Los mensajes
+                            con asunto claro suelen resolverse en la primera respuesta.
+                        </p>
+                    </aside>
+                </div>
+
+              
+                <article class="articulo-medio">
+                    <figure>
+                        <img src="contacto-equipo.jpg" alt="Equipo de atención al cliente trabajando con auriculares y computadoras" width="500" height="350" loading="lazy">
+                        <figcaption>Nuestro equipo de atención está listo para responder tus consultas.</figcaption>
+                    </figure>
+                    <div>
+                        <h2>Sobre esta sección</h2>
+                        <h3>Elementos de formulario utilizados</h3>
+                        <p>
+                            El formulario utiliza los elementos de formulario de HTML5: el contenedor
+                            <code>form</code>, las etiquetas <code>label</code> asociadas a cada campo mediante
+                            los atributos <code>for</code> e <code>id</code>, los campos <code>input</code> para
+                            el nombre, el correo y el asunto, el área de texto <code>textarea</code> para el
+                            mensaje y el botón <code>button</code> de envío. El navegador valida automáticamente
+                            que el correo tenga un formato correcto gracias al tipo <code>email</code>.
+                        </p>
+                        <h4>Validación en el navegador</h4>
+                        <p>
+                            Los campos marcados con un asterisco son obligatorios. Esta validación básica en el
+                            navegador mejora la experiencia del usuario antes de enviar cualquier dato al
+                            servidor, siguiendo las buenas prácticas estudiadas en la asignatura.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-grid">
+                <div>
+                    <h5>Sobre este proyecto</h5>
+                    <p>
+                        Sitio web estático desarrollado con HTML5 como proyecto académico de la asignatura
+                        Tecnologías Web de la UTPL, correspondiente a las Unidades 2 y 3 de la guía didáctica.
+                    </p>
+                </div>
+                <div>
+                    <h6>Mapa del sitio</h6>
+                    <ul class="menu-pie">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sociedad.html">Sociedad</a></li>
+                        <li><a href="negocios.html">Negocios</a></li>
+                        <li><a href="tendencias.html">Tendencias</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <small>&copy; 2026 WebImpacto &mdash; Desarrollado por Frank Dave Choez Galarza. Proyecto con fines educativos.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
